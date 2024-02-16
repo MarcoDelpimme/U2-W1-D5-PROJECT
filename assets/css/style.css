@@ -5,18 +5,19 @@
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
   border-bottom: solid 1px;
   background-color: #ffc017;
-  align-items: center;
+
   font-family: "Robnoto", sans-serif;
   position: sticky;
   top: 0;
   z-index: 1;
   padding-block: 20px;
+}
+
+#contentHeader {
+  display: flex;
+  justify-content: space-around;
 }
 
 h1 {
@@ -38,11 +39,16 @@ nav {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  padding-left: 37rem;
+  /* padding-left: 37rem; */
 }
 
 nav div {
   padding-inline: 1rem;
+  cursor: pointer;
+}
+
+nav div:hover {
+  color: white;
 }
 
 nav div button {
@@ -52,6 +58,13 @@ nav div button {
   border-radius: 30px;
   padding: 10px;
   border: none;
+}
+
+nav div button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: 0.5s;
 }
 
 /* SUBHEADER */
@@ -67,16 +80,20 @@ nav div button {
   background-color: #ffc017;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: 40px;
-  padding-block: 90px;
+  /* padding-block: 90px; */
   position: relative;
   padding-block: 5rem;
   border-bottom: solid black 1px;
 }
 
+#containerSubtitle {
+  margin-inline: 15%;
+}
+
 .subtitleh {
-  padding-right: 47rem;
+  /* padding-right: 47rem; */
 }
 
 .subtitleh button {
@@ -88,16 +105,25 @@ nav div button {
   margin-top: 30px;
   font-size: 17px;
   border: none;
+  cursor: pointer;
+}
+
+.subtitleh button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: 0.5s;
 }
 
 /* CARD TRENDING CSS */
 
 .trendingmedium {
   display: flex;
-  justify-content: center;
+
   align-items: center;
-  padding-right: 68rem;
+
   margin-top: 40px;
+  margin-inline: 13%;
 }
 
 #trending {
@@ -136,6 +162,7 @@ nav div button {
   color: black;
   font-weight: bold;
   font-size: 17px;
+  vertical-align: sub;
 }
 .card1 :nth-of-type(1) {
   color: rgb(0, 0, 0);
@@ -146,6 +173,7 @@ nav div button {
 #containeralltrends {
   border-bottom: solid lightgray 1px;
   padding-bottom: 50px;
+  margin-inline: 13%;
 }
 
 #container-trends1 {
@@ -154,7 +182,7 @@ nav div button {
   margin-bottom: 40px;
 
   align-content: center;
-  gap: 12rem;
+  gap: 5rem;
 }
 
 #container-trends2 {
@@ -162,7 +190,7 @@ nav div button {
   justify-content: center;
 
   align-content: center;
-  gap: 12rem;
+  gap: 5rem;
 }
 
 /* MAIN CONTENT */
@@ -171,15 +199,14 @@ nav div button {
   display: flex;
   flex-direction: row;
   margin-top: 60px;
+  margin-inline: 11%;
 }
 
 #sect1 {
-  height: 100vh;
   width: 60%;
 }
 
 #sect2 {
-  height: 100vh;
   width: 40%;
   margin-inline: 60px;
 }
@@ -193,13 +220,15 @@ nav div button {
 
 .profileName img {
   border-radius: 50%;
-  width: 3%;
+  width: 4%;
+  margin: 5px;
 }
 
 #allcards {
   margin-bottom: 20px;
   margin-left: 30px;
   position: relative;
+  width: 70%;
 }
 
 #allcards h5 {
@@ -219,7 +248,7 @@ nav div button {
 }
 
 #photo {
-  width: 100%;
+  width: 300px;
   height: 100%;
   object-fit: cover;
 }
@@ -227,6 +256,11 @@ nav div button {
 .bookmark {
   position: absolute;
   right: 1rem;
+  cursor: pointer;
+}
+
+.bookmark:hover {
+  color: white;
 }
 
 .buttonIntestation {
@@ -257,7 +291,15 @@ nav div button {
 #containerBtn button {
   padding: 10px;
   width: 28%;
-  margin: 10px;
+  margin: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+#containerBtn button:hover {
+  background-color: black;
+  color: white;
+  transition: 1s;
 }
 
 #anchorContainer {
@@ -268,4 +310,9 @@ nav div button {
   text-decoration: none;
   color: gray;
   padding: 10px;
+  cursor: pointer;
+}
+
+#anchorContainer a:hover {
+  color: black;
 }
