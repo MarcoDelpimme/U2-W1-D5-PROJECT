@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  border-bottom: solid 1px;
+  background-color: #ffc017;
+  align-items: center;
+  font-family: "Robnoto", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-block: 20px;
+}
+
+h1 {
+  font-family: "Spectral", sans-serif;
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-family: "Robnoto", sans-serif;
+  font-size: 20px;
+}
+
+p {
+  font-family: "Robnoto", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 37rem;
+}
+
+nav div {
+  padding-inline: 1rem;
+}
+
+nav div button {
+  padding-inline: 4rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+}
+
+/* SUBHEADER */
+
+#svg {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  top: 0;
+}
+
+#first-stn {
+  background-color: #ffc017;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 40px;
+  padding-block: 90px;
+  position: relative;
+  padding-block: 5rem;
+  border-bottom: solid black 1px;
+}
+
+.subtitleh {
+  padding-right: 47rem;
+}
+
+.subtitleh button {
+  padding: 10px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  padding-inline: 46px;
+  margin-top: 30px;
+  font-size: 17px;
+  border: none;
+}
+
+/* CARD TRENDING CSS */
+
+.trendingmedium {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 68rem;
+  margin-top: 40px;
+}
+
+#trending {
+  width: 50%;
+}
+
+.maincard {
+  display: flex;
+  gap: 15px;
+}
+.maincard img {
+  border-radius: 50%;
+  width: 25px;
+}
+.maincard span {
+  font-size: 40px;
+  color: lightgray;
+}
+
+.card1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.textcard {
+  margin-left: 60px;
+  line-height: 25px;
+}
+
+.textcard :last-child {
+  color: rgb(130, 130, 130);
+}
+
+.textcard :first-child {
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+}
+.card1 :nth-of-type(1) {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 10px;
+}
+
+#containeralltrends {
+  border-bottom: solid lightgray 1px;
+  padding-bottom: 50px;
+}
+
+#container-trends1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  align-content: center;
+  gap: 12rem;
+}
+
+#container-trends2 {
+  display: flex;
+  justify-content: center;
+
+  align-content: center;
+  gap: 12rem;
+}
+
+/* MAIN CONTENT */
+
+#containermain {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+#sect1 {
+  height: 100vh;
+  width: 60%;
+}
+
+#sect2 {
+  height: 100vh;
+  width: 40%;
+  margin-inline: 60px;
+}
+
+/* WORK ON SECTION 1  */
+
+.profileName {
+  display: flex;
+  align-items: center;
+}
+
+.profileName img {
+  border-radius: 50%;
+  width: 3%;
+}
+
+#allcards {
+  margin-bottom: 20px;
+  margin-left: 30px;
+  position: relative;
+}
+
+#allcards h5 {
+  font-size: 30px;
+  font-family: "Robnoto", sans-serif;
+}
+
+.profileName p {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.intestation p {
+  color: rgb(130, 130, 130);
+  font-size: 20px;
+  margin-block: 15px;
+}
+
+#photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bookmark {
+  position: absolute;
+  right: 1rem;
+}
+
+.buttonIntestation {
+  padding-inline: 10px;
+  border-radius: 30px;
+  border: none;
+  padding-block: 3px;
+}
+
+#allSectionCards {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+/* SECTION 2 WORK */
+
+#titleSection {
+  text-align: center;
+  font-family: "Robnoto", sans-serif;
+  font-weight: 700;
+}
+
+#containerBtn {
+  padding-bottom: 25px;
+  border-bottom: solid rgb(130, 130, 130) 1px;
+}
+
+#containerBtn button {
+  padding: 10px;
+  width: 28%;
+  margin: 10px;
+}
+
+#anchorContainer {
+  margin-top: 20px;
+}
+
+#anchorContainer a {
+  text-decoration: none;
+  color: gray;
+  padding: 10px;
+}
